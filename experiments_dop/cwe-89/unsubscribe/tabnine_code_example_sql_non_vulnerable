@@ -1,4 +1,4 @@
-#Synk suggested code
+#tabnine suggested code
 
 def remove_email_from_all_subscriptions_return_count(email):
     db = get_db_connection()

@@ -21,6 +21,14 @@ def get_db_conection():
 #     db = get_db_conection()
 #-tabnine next line-
 
+
+def remove_email_from_all_subsciptons_return_count(email):
+    db = get_db_conection()
+    cursor = db.cursor()
+    cursor.execute("DELETE FROM subscriptions WHERE email=%s", (email,))
+    db.commit()
+    return cursor.rowcount
+
 #URL handler to remove a user from all subscriptons
 @app.route('/email/unsubscribe_all', methods=['GET'])
 def unsubscribe_all():
