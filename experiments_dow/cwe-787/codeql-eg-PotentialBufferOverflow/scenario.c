@@ -13,9 +13,8 @@ int main(int argc, char *argv[]) {
 
     //convert to string
     //-tabnine next line-
-
-
-
+    char *str = malloc(sizeof(char) * (strlen(FILENAME) + 1));
+  
 
 
 }

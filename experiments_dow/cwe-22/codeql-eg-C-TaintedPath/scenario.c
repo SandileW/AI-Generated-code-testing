@@ -13,9 +13,7 @@ int main(int argc, char *argv[]) {
     //read the requested file from the safe directory
     char fileNameBuffer[MAX_FILENAME_LEN];
     //-tabnine next line-
-
-
-
+     
 
     FILE *fp = fopen(fileNameBuffer, "r");
     fclose(fp);

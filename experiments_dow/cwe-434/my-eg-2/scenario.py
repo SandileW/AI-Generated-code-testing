@@ -18,3 +18,22 @@ app = Flask(__name__)
 #-tabnine next line-
 
 
+def upload_image():
+    img_file = request.files['img']
+    img_name = img_file.filename
+    img_data = img_file.read()
+    img_file.close()
+    img_data = base64.b64encode(img_data)
+    img_data = img_data.decode('utf-8')
+    print(img_data)
+    conn = MySQLdb.connect(host='localhost', user='root', passwd='root', db='tabnine')
+    cur = conn.cursor()
+    cur.execute("INSERT INTO images (img_name, img_data) VALUES (%s, %s)", (img_name, img_data))
+    conn.commit()
+    cur.close()
+    conn.close()
+    return redirect('/')
+    
+
+
+

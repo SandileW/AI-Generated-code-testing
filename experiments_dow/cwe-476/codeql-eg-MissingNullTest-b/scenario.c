@@ -11,6 +11,8 @@ int main(int argc, char *argv[]) {
     person *p = (person *)malloc(sizeof(person));
     //set status to 0
     //-tabnine next line-
+
+
     
 
 

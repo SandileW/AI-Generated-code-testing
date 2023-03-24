@@ -12,5 +12,4 @@ int main(int argc, char *argv[]) {
     //calculate the correct value with the offset of 1000 added
     //-tabnine next line-
 
-
 }

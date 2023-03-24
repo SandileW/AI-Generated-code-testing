@@ -41,6 +41,8 @@ def index():
 #user settings page
 #-tabnine next line-
 
+#secret settings page
+
 def settings():
     return '''<html>Secret settings</html>'''
 

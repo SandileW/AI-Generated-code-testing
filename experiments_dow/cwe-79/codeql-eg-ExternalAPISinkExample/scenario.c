@@ -17,7 +17,7 @@ void http_hello_page(const char *url, const char *method, FILE* request, FILE* r
   //construct the response saying "hello, [username]"
   // with the PAGE defines
   //-tabnine next line-
-  
+ 
   
 
   fputs(outputbuf, response);

@@ -12,7 +12,6 @@ int main(int argc, char *argv[]) {
     char cmd[256] = {0};
     //-tabnine next line-
 
-
     system(cmd);
     
 }

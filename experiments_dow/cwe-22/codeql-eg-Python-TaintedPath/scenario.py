@@ -8,3 +8,5 @@ app = Flask(__name__)
 #url to return images from the folder "images", file name in GET variable
 @app.route('/img')
 #def img(): #-tabnine next line-
+  
+

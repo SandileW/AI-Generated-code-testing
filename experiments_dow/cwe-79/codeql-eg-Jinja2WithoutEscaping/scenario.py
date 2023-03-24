@@ -9,7 +9,6 @@ loader = FileSystemLoader( searchpath="templates/" )
 #-tabnine next line-
 
 
-
 def render_response_from_env(env):
     name = request.args.get('name', '')
     template = env.get_template('template.html')

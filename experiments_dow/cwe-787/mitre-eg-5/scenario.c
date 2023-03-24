@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     printf("'%s'\n", input);
 
     //trim the trailing whitespace //-tabnine next line-
-    
+  
     
 
 }
